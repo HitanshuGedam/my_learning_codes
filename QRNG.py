@@ -28,6 +28,8 @@ result = job.result()
 counts = result.get_counts(qc)
 print(counts)
 
+plot_histogram(counts)
+
 random_number = int(list(counts.keys())[list(counts.values()).index(max(counts.values()))], 2)
 random_number = random_number % maximum
 print(random_number)
